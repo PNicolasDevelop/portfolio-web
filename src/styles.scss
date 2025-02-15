@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url("assets/fonts/PressStart2P-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('assets/fonts/CascadiaCode.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cascadia Code Italic';
+  src: url('assets/fonts/CascadiaCodeItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+body{
+  margin: 0 !important;
+  background-color: black;
+  font-family: "Cascadia Code", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cascadia{
+  font-family: 'Cascadia Code',serif;
+}

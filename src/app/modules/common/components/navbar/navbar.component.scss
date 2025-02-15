@@ -1,0 +1,79 @@
+.menu-container{
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  gap: 10px;
+  background-color: black;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: block;
+}
+
+.terminal {
+  font-size: 26px;
+  display: flex;
+  color: #ffcc00;
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid transparent;
+  animation: typing 11s steps(20, end) infinite, reset 11s steps(1) infinite;
+}
+
+/* Parpadeo del cursor */
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s steps(2, start) infinite;
+}
+
+/* Animación para escribir y borrar */
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 20ch; } /* 7 caracteres de "NicoDev" */
+  100% { width: 0; }
+}
+
+/* Reiniciar animación para que vuelva a escribirse */
+@keyframes reset {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 1; }
+}
+
+/* Cursor parpadeando */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.links-container{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  .links{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    gap: 10px;
+    a{
+      text-decoration: none;
+
+    }
+  }
+}
+
