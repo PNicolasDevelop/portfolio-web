@@ -1,10 +1,26 @@
 <div class="terminal-container">
   <section class="terminal-header">
-    <div class="buttons">
-      <div class="button danger"></div>
-      <div class="button warning"></div>
-      <div class="button success"></div>
+    <div class="pricipal">
+      <div class="buttons">
+        <div class="button danger"></div>
+        <div class="button warning"></div>
+        <div class="button success"></div>
+      </div>
+      <div class="name-container">
+        <img src="assets/icons/285658_blue_folder_icon.svg" alt="Icono" width="20"
+             height="20"/>
+        <p>{{ 'PNicolas@terminal:~$' }}</p>
+      </div>
+    </div>
+    <div class="tabs">
+      <section class="links">
+        @for(linkItem of listSections; track $index) {
+          <a class="section" [ngClass]="linkItem.active ? 'active' : 'inactive'" (click)="goToSection(linkItem)">{{ linkItem.name }}</a>
+        }
+      </section>
     </div>
   </section>
-  <section class="terminal-content"></section>
+  <section class="terminal-content">
+
+  </section>
 </div>
