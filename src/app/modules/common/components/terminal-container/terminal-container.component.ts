@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {TerminalSection} from '../../models/models';
+import {AboutMeComponent} from '../aboutme/aboutme.component';
 @Component({
   selector: 'app-terminal-container',
   templateUrl: './terminal-container.component.html',
   styleUrls: ['./terminal-container.component.scss'],
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    AboutMeComponent
   ]
 })
 export class TerminalContainerComponent {
@@ -23,7 +25,7 @@ export class TerminalContainerComponent {
       active: false,
     },
     {
-      name: '/tecnologies',
+      name: '/technologies',
       link: '/technologies',
       active: false,
     },

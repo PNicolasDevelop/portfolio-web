@@ -3,14 +3,15 @@
   flex-direction: column;
   margin-left: 8px;
   margin-right: 8px;
+  height: 100%;
 }
 .navbar {
   display: flex;
   gap: 10px;
+  height: 100%;
   background-color: black;
   backdrop-filter: blur(10px);
   padding: 10px;
-  height: 60px;
   justify-content: center;
   align-items: center;
 }
