@@ -1,6 +1,38 @@
-<div class="app-container">
-  <app-navbar></app-navbar>
-  <app-terminal-container>
-    <router-outlet />
-  </app-terminal-container>
+<!--<div class="app-container">-->
+<!--  <app-navbar></app-navbar>-->
+<!--  <app-terminal-container>-->
+<!--    <router-outlet />-->
+<!--  </app-terminal-container>-->
+<!--</div>-->
+<div class="full-screen-container">
+    <app-navbar></app-navbar>
+    <app-terminal-container>
+    </app-terminal-container>
 </div>
+
+<style>
+  :host {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .full-screen-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    overflow: auto;
+    app-navbar{
+      height: 10%;
+    }
+    app-terminal-container {
+      display: flex;
+      width: 100%;
+      height: 90%;
+    }
+  }
+</style>

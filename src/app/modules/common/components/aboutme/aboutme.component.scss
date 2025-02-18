@@ -1,7 +1,6 @@
 .container-aboutme {
   display: flex;
   flex-direction: row;
-  padding: 16px;
   justify-content: center;
   overflow: auto;
   @media(max-width: 640px){
@@ -46,18 +45,18 @@
     }
   }
   .description{
-    width: 50%;
+    width: 60%;
+    padding-right: 16px;
     @media(max-width: 640px){
       width: 100%;
     }
     margin-top: 12px;
-    padding: 12px;
     text-align: justify;
   }
 }
 
 .image-info{
-  width: 50%;
+  width: 40%;
   @media(max-width: 640px){
     width: 100%;
   }
@@ -66,4 +65,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  img {
+    cursor: pointer;
+  }
 }

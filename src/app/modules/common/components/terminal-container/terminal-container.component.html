@@ -1,5 +1,5 @@
 <div class="terminal-container">
-  <section class="terminal-header">
+  <div class="terminal-header">
     <div class="pricipal">
       <div class="buttons">
         <div class="button danger"></div>
@@ -13,13 +13,13 @@
       </div>
     </div>
     <div class="tabs">
-      <section class="links">
+      <div class="links">
         @for(linkItem of listSections; track $index) {
           <a class="section" [ngClass]="linkItem.active ? 'active' : 'inactive'" (click)="goToSection(linkItem)">{{ linkItem.name }}</a>
         }
-      </section>
+      </div>
     </div>
-  </section>
+  </div>
   <section class="terminal-content">
 
     <app-aboutme></app-aboutme>
